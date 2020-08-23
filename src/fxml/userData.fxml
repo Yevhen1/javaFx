@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--xmlns:fx="http://javafx.com/fxml"-->
+<!--fx:controller="controller.UserDataController"-->
+<!--prefHeight="400.0" prefWidth="600.0">-->
+<!--</AnchorPane>-->
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDataController">
+   <children>
+      <ImageView fx:id="largeImageUserData" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets bottom="64.0" left="32.0" right="32.0" top="64.0" />
+         </HBox.margin>
+      </ImageView>
+      <VBox prefHeight="256.0" prefWidth="432.0">
+         <children>
+            <Label fx:id="countryUserData" prefHeight="17.0" prefWidth="482.0" text="country">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="cityUserData" prefHeight="17.0" prefWidth="457.0" text="city">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="streetUserData" prefHeight="17.0" prefWidth="438.0" text="street">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailUserData" prefHeight="17.0" prefWidth="458.0" text="email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberUserData" prefHeight="17.0" prefWidth="468.0" text="phoneNumber">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="32.0" left="16.0" top="32.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

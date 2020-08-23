@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="itemHBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getUserData" prefHeight="52.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
+   <children>
+      <ImageView fx:id="itemImageView" fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cat.jpg" />
+         </image>
+         <HBox.margin>
+            <Insets bottom="2.0" left="5.0" top="2.0" />
+         </HBox.margin></ImageView>
+      <Label fx:id="itemFirstNameLabel" text="firstName">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemLastNameItem" text="lastName">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+</HBox>
